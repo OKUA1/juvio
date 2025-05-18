@@ -1,0 +1,11 @@
+{
+    "argv": [
+      "juvio-kernel-launcher",
+      "-f",
+      "{connection_file}"
+    ],
+    "name": "juvio",
+    "display_name": "Juvio",
+    "language": "python"
+  }
+  
