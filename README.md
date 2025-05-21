@@ -46,6 +46,11 @@
 
 ## 🧑‍💻 How to Use
 
+> [!WARNING]
+> This project is currently in **early beta**. It may contain bugs and is subject to change.
+> Please [open an issue](../../issues) to report problems or suggest improvements.
+
+
 **1. Install Juvio:**
 
 ```bash
@@ -66,6 +71,12 @@ https://docs.astral.sh/uv/getting-started/installation/
   ```
 Dependencies are tracked, environments are reproducible, and your notebook stays Git-clean ✨
 
+**Known issue:** If you experience the error "Notebook does not appear to be JSON", try to lauch the jupyterlab with an additional argument:
+
+```bash
+jupyter lab --ServerApp.jpserver_extensions="{'juvio': True}"
+```
+
 ## Why Use Juvio?
 
 - No additional lock or requirements files are needed
@@ -77,4 +88,5 @@ Dependencies are tracked, environments are reproducible, and your notebook stays
 - `uv` – ultra-fast Python package management
 - `PEP 723` – Python inline dependency standards
 - `jupytext`-like format for easy version control
+
 
